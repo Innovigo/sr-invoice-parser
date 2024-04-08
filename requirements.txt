@@ -1,0 +1,7 @@
+pytz>=2021.1
+requests>=2.21.0
+parsel>=1.7.0
+srtools>=0.1.13
+flit-core>=3.9.0
+ruff
+pytest

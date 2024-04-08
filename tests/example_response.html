@@ -1,0 +1,414 @@
+<body class="body-content">
+    <div class="container">
+      <div class="m-t-md">
+        <div class="row  mr-1 ml-1">
+          <h3 class="text-dark"><img src="/Content/Images/logo.png" alt="logo" height="25" /> Провера рачуна</h3>
+          <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a id="languagesSelect" href="#" class="nav-link dropdown-toggle pb-1 pt-1" data-toggle="dropdown"><img src="/Content/Images/Flags/sr-Cyrl-RS.png" alt="српски (Србија)" width="16" /> српски (Србија)</a>
+              <div class="dropdown-menu dropdown-menu-right">
+                <a href="/Home/ChangeLanguage/en-US" class="dropdown-item "><img src="/Content/Images/Flags/en-US.png" alt="English (United States)" width="16" /> English (United States)</a>
+                <a href="/Home/ChangeLanguage/sr-Cyrl-RS" class="dropdown-item  font-bold"><img src="/Content/Images/Flags/sr-Cyrl-RS.png" alt="српски (Србија)" width="16" /> Српски (Србија)</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <hr />
+        <form action="/v/" method="post">
+          <div class="row">
+            <div class="col-lg-12  text-center">
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <i class="glyphicon glyphicon-info-sign"></i>
+                  Статус рачуна
+                </div>
+                <div class="panel-body">
+                  <div class="form-group">
+                    <div class="col-md-12">
+                      <label class="h2" for="" id="invoiceStatusLabel" style="margin-top:10px">Рачун је проверен</label>
+                      <br /> <img src="/Content/Images/Verification/Valid.png" width="100" height="100" />
+                    </div>
+                    <div class="col-md-12">
+                      <span style="padding: 10px 0px">
+                        <text>
+                          <b>
+                          Упоредите време издавања и износ промета на овој страни и на Вашем рачуну. У случају неједнакости, <a target="_blank" href='/CustomerReport/QWERTY1U-QWERTY1U-188553/'>пријавите случај пореској управи.</a>                                            </b>
+                        </text>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-md-6 text-center">
+              <div class="panel panel-info">
+                <div class="panel-heading">
+                  <i class="glyphicon glyphicon-arrow-right"></i>
+                  Захтев за фискализацију рачуна
+                </div>
+                <div class="panel-body">
+                  <div class="form-group">
+                    <label class="col-form-label">ПИБ</label>
+                    <div class="col-md-12">
+                      <span id="tinLabel">
+                      123456789
+                      <span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-form-label">Име продајног места</label>
+                    <div class="col-md-12">
+                      <span id="shopFullNameLabel">Primer naziva firme</span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-form-label">Адреса</label>
+                    <div class="col-md-12">
+                      <span id="addressLabel">Кнеза Михаила</span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-form-label">Град</label>
+                    <div class="col-md-12">
+                      <span id="cityLabel">БЕОГРАД</span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-form-label">Општина</label>
+                    <div class="col-md-12">
+                      <span id="administrativeUnitLabel">Београд-Београд</span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-form-label">ИД купца</label>
+                    <div class="col-md-12">
+                      <span id="buyerIdLabel">
+                      10:987654321
+                      </span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-form-label">Затражио</label>
+                    <div class="col-md-12">
+                      <span id="requestedByLabel">
+                      QWERTY1U
+                      </span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-form-label" for="">Врста</label>
+                    <div class="col-md-12">
+                      <span id="invoiceTypeId">Промет</span>
+                      <span id="transactionTypeId">Продаја</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 text-center">
+              <div class="panel panel-info">
+                <div class="panel-heading">
+                  <i class="glyphicon glyphicon-arrow-left"></i>
+                  Резултат фискализације рачуна
+                </div>
+                <div class="panel-body">
+                  <div class="form-group">
+                    <label class="col-form-label">Укупан износ</label>
+                    <div class="col-md-12">
+                      <span id="totalAmountLabel">
+                      8.960,00
+                      </span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-form-label">Бројач по врсти трансакције</label>
+                    <div class="col-md-12">
+                      <span id="transactionTypeCounterLabel">
+                      175097
+                      </span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-form-label">Бројач укупног броја</label>
+                    <div class="col-md-12">
+                      <span id="totalCounterLabel">
+                      188553
+                      </span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-form-label">Екстензија бројача рачуна</label>
+                    <div class="col-md-12">
+                      <span id="invoiceCounterExtensionLabel">
+                      ПП
+                      </span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-form-label">Затражио - Потписао - Бројач</label>
+                    <div class="col-md-12">
+                      <span id="invoiceNumberLabel">
+                      QWERTYU1-QWERTYU1-12345
+                      </span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-form-label">Потписао</label>
+                    <div class="col-md-12">
+                      <span id="signedByLabel">
+                      QWERTY1U
+                      </span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-form-label">ПФР време (временска зона сервера)</label>
+                    <div class="col-md-12">
+                      <span id="sdcDateTimeLabel">
+                      07.04.2024. 17:00:30
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 text-center centered">
+              <div class="panel panel-info">
+                <div class="panel-heading">
+                  <h5 class="panel-title">
+                    <a data-toggle="collapse" href="#collapse-specs" class="collapsed" aria-expanded="false"><i class="glyphicon glyphicon-align-justify"></i> Спецификација рачуна</a>
+                  </h5>
+                </div>
+                <div id="collapse-specs" class="panel-collapse in collapse">
+                  <div class="panel-body">
+                    <div class="table-responsive m-t">
+                      <table class="table invoice-table" aria-label="Invoice specification" data-bind="visible: !LoadingSpecifications()">
+                        <thead>
+                          <tr>
+                            <th style="min-height: 200px;">Назив</th>
+                            <th>Количина</th>
+                            <th>Јед. цена са ПДВ</th>
+                            <th>Укупна цена</th>
+                            <th>Основица</th>
+                            <th>ПДВ</th>
+                            <th>Стопа</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                        <tbody data-bind="foreach: Specifications">
+                          <tr>
+                            <td>
+                              <strong data-bind="text: Name"></strong>
+                            </td>
+                            <td data-bind="decimalAsText: Quantity"></td>
+                            <td data-bind="decimalAsText: UnitPrice"></td>
+                            <td data-bind="decimalAsText: Total"></td>
+                            <td data-bind="decimalAsText: TaxBaseAmount"></td>
+                            <td data-bind="decimalAsText: VatAmount"></td>
+                            <td data-bind="text: Label"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <div data-bind="visible: LoadingSpecifications" class="sk-spinner sk-spinner-wave">
+                        <div class="sk-rect1"></div>
+                        <div class="sk-rect2"></div>
+                        <div class="sk-rect3"></div>
+                        <div class="sk-rect4"></div>
+                        <div class="sk-rect5"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 text-center centered">
+              <div class="panel panel-warning">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" href="#collapse3"><i class="glyphicon glyphicon-list-alt"></i> Журнал</a>
+                  </h4>
+                </div>
+                <div id="collapse3" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <pre style="font-family:monospace">============ ФИСКАЛНИ РАЧУН ============
+123456789
+OKOV INTERNATIONAL
+Primer naziva firme
+Кнеза Михаила
+Београд-Београд
+Касир:                      jelena.brkic
+ИД купца:                   10:987654321
+ЕСИР број:                      644/20.1
+-------------ПРОМЕТ ПРОДАЈА-------------
+Артикли
+========================================
+Назив   Цена         Кол.         Укупно
+Veoma dugačak naziv artikla za testiranj
+e test 1 (Ђ)
+    4.000,00          1       4.000,00
+Veoma dugačak naziv artikla za testiranj
+ test 2 (Ђ)
+    1.000,00          1       1.000,00
+Kratak naziv artikla 1 (Е)
+    1.960,00          1       1.960,00
+Kratak naziv artikla 2 (G)
+    1.000,00          1       1.000,00
+Kratak naziv artikla 3 (A)
+    1.000,00          1       1.000,00
+----------------------------------------
+Укупан износ:                   8.960,00
+Платна картица:                 8.960,00
+========================================
+Ознака       Име      Стопа        Порез
+Ђ           О-ПДВ   20,00%        500,00
+Е           О-ПДВ   10,00%        196,00
+A           О-ПДВ    0,00%          0,00
+G           О-ПДВ    0,00%          0,00
+----------------------------------------
+Укупан износ пореза:              696,00
+========================================
+ПФР време:          07.04.2024. 17:00:30
+ПФР број рачуна: QWERTY1U-QWERTY1U-18855
+3
+Бројач рачуна:           175097/188553ПП
+========================================<br/><img src=data:image/gif;base64 width='250' height='250'/>
+======== КРАЈ ФИСКАЛНОГ РАЧУНА =========</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 text-center centered">
+              <button type="button" class="btn btn-success mb-1" onclick="OnPrintClicked();">Преглед за штампу</button>
+              <div style="display: none">
+                <div id="PrintInvoice" class="panel-body" style="margin:0;">
+                  <div style="margin:0;">
+                    <div style="width:100%;overflow:hidden" class="row">
+                      <div style="width:45%;float:left;">
+                        <p style="border: none; text-align:left;margin:0px;padding:0px;"><strong>ПИБ:</strong>&nbsp;<span class="badge" style="background-color: #fff;">123456789</span></p>
+                        <hr />
+                        <p style="border: none; text-align:left;margin:0px;padding:0px;"><strong>Предузеће:</strong>&nbsp;<span class="badge" style="background-color: #fff;white-space: pre-wrap;line-height: 1.3; line-break: anywhere;">OKOV INTERNATIONAL</span></p>
+                        <hr />
+                        <p style="border: none; text-align:left;margin:0px;padding:0px;"><strong>Место продаје:</strong>&nbsp;<span class="badge" style="background-color: #fff;white-space: pre-wrap;line-height: 1.3; line-break: anywhere;">Okov centar Bežanijska kosa</span></p>
+                        <hr />
+                        <p style="border: none; text-align:left;margin:0px;padding:0px;"><strong>Адреса:</strong>&nbsp;<span class="badge" style="background-color: #fff;white-space: pre-wrap;line-height: 1.3; line-break: anywhere;">Кнеза Михаила   </span></p>
+                        <hr />
+                        <p style="border: none; text-align:left;margin:0px;padding:0px;"><strong>Општина:</strong>&nbsp;<span class="badge" style="background-color: #fff;white-space: pre-wrap;line-height: 1.3; line-break: anywhere;">Београд-Београд</span></p>
+                        <hr />
+                        <p style="border: none; text-align:left;margin:0px;padding:0px;"><strong>Касир:</strong>&nbsp;<span class="badge" style="background-color: #fff;white-space: pre-wrap;line-height: 1.3; line-break: anywhere;"></span></p>
+                        <hr />
+                        <p style="border: none; text-align:left;margin:0px;padding:0px;"><strong>ИД купца:</strong>&nbsp;<span class="badge" style="background-color: #fff;white-space: pre-wrap;line-height: 1.3; line-break: anywhere;">10:987654321</span></p>
+                        <hr />
+                        <p style="border: none; text-align:left;margin:0px;padding:0px;"><strong>Опционо поље купца:</strong>&nbsp;<span class="badge" style="background-color: #fff;white-space: pre-wrap;line-height: 1.3; line-break: anywhere;"></span></p>
+                        <hr />
+                        <p style="border: none; text-align:left;margin:0px;padding:0px;"><strong>ЕСИР број:</strong>&nbsp;<span class="badge" style="background-color: #fff;white-space: pre-wrap;line-height: 1.3; line-break: anywhere;"></span></p>
+                        <hr />
+                        <p style="border: none; text-align:left;margin:0px;padding:0px;">
+                          <strong>ЕСИР време:</strong>&nbsp;
+                        </p>
+                        <hr />
+                      </div>
+                      <div style="width:54%;float:right; align-content:flex-end;">
+                        <div>
+                          <div style="width:100%;display: inline-block;">
+                            <div style="width:55%;float:left;text-align:left;">
+                              <br />
+                              <strong style="margin-bottom:0px;">
+                              Број рачуна:
+                              </strong>
+                              <h4 style="margin-top:0px;">QWERTY1U-QWERTY1U-188553</h4>
+                              <h4>ФИСКАЛНИ РАЧУН</h4>
+                            </div>
+                            <div style="width:45%;float:right">
+                              <br /><img class='QR_img' alt='' src=data:image/gif;base64 width='169' height='169' />
+                            </div>
+                          </div>
+                          <div style="width:100%;display: inline-block;">
+                            <hr />
+                            <table>
+                              <tbody>
+                                <tr>
+                                  <td><strong>За уплату:</strong></td>
+                                  <td style="padding-left: 20px;">8.960,00</td>
+                                </tr>
+                                <tr data-bind="if: Specifications().length > 0">
+                                  <td><strong>Порез укупно:</strong></td>
+                                  <td style="padding-left:20px;" data-bind="decimalAsText: TotalTax"></td>
+                                </tr>
+                                <tr>
+                                  <td><strong>Начин плаћања:</strong></td>
+                                  <td style="padding-left: 20px;">
+                                    <span>Платна картица</span>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td><strong>Врста рачуна:</strong></td>
+                                  <td style="padding-left:20px;">Промет Продаја</td>
+                                </tr>
+                                <tr>
+                                  <td><strong>Време на безбедносном елементу:</strong></td>
+                                  <td style="padding-left:20px;">07.04.2024. 17:00:30</td>
+                                </tr>
+                                <tr>
+                                  <td><strong>Бројач рачуна:</strong></td>
+                                  <td style="padding-left:20px;">175097/188553ПП</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <br />
+                    <div style="width:100%;margin-top: 30px" data-bind="if: Specifications().length > 0">
+                      <h3 style="text-align:left;padding-bottom:0;margin-bottom:0;">Спецификација рачуна</h3>
+                      <hr style="margin-top:0;padding-top:0;" />
+                      <table style="width:100%;padding:0;">
+                        <thead style="font-size: 14px;">
+                          <tr>
+                            <th scope="col" style="border-bottom:solid DarkGray 1px;text-align:left;">Назив</th>
+                            <th scope="col" style="border-bottom:solid DarkGray 1px;text-align:right;">Количина</th>
+                            <th scope="col" style="border-bottom:solid DarkGray 1px;text-align:right;">Јед. цена са ПДВ</th>
+                            <th scope="col" style="border-bottom:solid DarkGray 1px;text-align:right;">Укупна цена</th>
+                            <th scope="col" style="border-bottom:solid DarkGray 1px;text-align:right;">Основица</th>
+                            <th scope="col" style="border-bottom:solid DarkGray 1px;text-align:right;">ПДВ</th>
+                            <th scope="col" style="border-bottom:solid DarkGray 1px;text-align:right;">Стопа</th>
+                          </tr>
+                        </thead>
+                        <tbody style="font-size: 12px;" data-bind="foreach: Specifications">
+                          <tr>
+                            <td style="border-bottom: solid DarkGray 1px; text-align: left;" data-bind="text: Name"></td>
+                            <td style="border-bottom: solid DarkGray 1px; text-align: right;" data-bind="decimalAsText: Quantity"></td>
+                            <td style="border-bottom: solid DarkGray 1px; text-align: right;" data-bind="decimalAsText: UnitPrice"></td>
+                            <td style="border-bottom: solid DarkGray 1px; text-align: right;" data-bind="decimalAsText: Total"></td>
+                            <td style="border-bottom: solid DarkGray 1px; text-align: right;" data-bind="decimalAsText: TaxBaseAmount"></td>
+                            <td style="border-bottom: solid DarkGray 1px; text-align: right;" data-bind="decimalAsText: VatAmount"></td>
+                            <td style="border-bottom: solid DarkGray 1px; text-align: right;" data-bind="text: Label"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 text-center centered">
+              <a target="_blank" href='/CustomerReport/QWERTY1U-QWERTY1U-188553/' class="btn btn-danger">       <i class="glyphicon glyphicon-flag"></i> Пријавите овај рачун</a>
+            </div>
+          </div>
+        </form>
+        <hr />
+        <footer>
+          <p class="text-center"><strong>Copyright</strong> <a href="https://www.dti.rs">Data Tech International</a> &copy; 2012-2024</p>
+        </footer>
+      </div>
+    </div>
+  </body>

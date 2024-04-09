@@ -3,10 +3,9 @@
 [![build-status-image]][build-status]
 
 SR Invoice Parser is a small library that is parsing invoices and extracting relevant information.
-It is designed to work with invoices from the Tax Administration of the Republic of Serbia (Poreska uprava Republike Srbije).
+It is designed to work with invoices from the TaxCore Tax Administration of the Republic of Serbia (Poreska uprava Republike Srbije).
 
-- https://purs.gov.rs/
-- https://suf.purs.gov.rs/
+It works on domain [suf.purs.gov.rs](https://suf.purs.gov.rs/) where they use TaxCore website to show invoices.
 
 QR code gives a URL to the invoice web page, and this parser extracts the relevant information from the web page, like a crawler.
 

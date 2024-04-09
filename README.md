@@ -82,6 +82,15 @@ The module has custom exceptions for handling various error scenarios:
 - `ParserParseException` - Raised when any error occurs during parsing the HTML content.
 - `ParserRequestException` - Raised for errors related to fetching HTML content.
 
+## Package Dependencies
+
+Thanks to the following packages:
+
+- [pytz](https://pypi.org/project/pytz/)
+- [requests](https://pypi.org/project/requests/)
+- [parsel](https://pypi.org/project/parsel/)
+- [srtools](https://pypi.org/project/srtools/)
+
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.

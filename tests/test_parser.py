@@ -153,6 +153,20 @@ class TestParser(TestCase):
         assert parser.get_company_tin() == value
 
     @mock.patch("sr_invoice_parser.parser.requests.get")
+    def test_get_buyer_tin(self, mock_get):
+        # Create a mock response
+        mock_get.return_value = self.create_success_mock_response()
+        value = "987654321"
+
+        # test with URL
+        parser = InvoiceParser(url="https://suf.purs.gov.rs/v/vl?")
+        assert parser.get_buyer_tin() == value
+
+        # test with HTML content
+        parser = InvoiceParser(html_text=self.example_response)
+        assert parser.get_buyer_tin() == value
+
+    @mock.patch("sr_invoice_parser.parser.requests.get")
     def test_get_total_amount_failed(self, mock_get):
         # Create a mock response
         mock_get.return_value = self.create_wrong_mock_response()
@@ -417,6 +431,7 @@ G           О-ПДВ    0,00%          0,00
         value = {
             "company_name": "Primer naziva firme",
             "company_tin": "123456789",
+            "buyer_tin": "987654321",
             "invoice_number": "QWERTYU1-QWERTYU1-12345",
             "invoice_datetime": datetime(2024, 4, 7, 15, 0, 30).replace(tzinfo=utc),
             "invoice_total_amount": 8960.0,

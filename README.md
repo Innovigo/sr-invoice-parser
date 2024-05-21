@@ -24,6 +24,7 @@ The `InvoiceParser` class is the entry point for using the parser.
 - `get_data()` - Extracts all the data from the invoice and returns it as a dictionary
 - `get_company_name()` - Extracts the company name.
 - `get_company_tin()` - Extracts the company's tax identification number/PFR.
+- `get_buyer_tin()` - Extracts the buyer's tax identification number/PFR.
 - `get_total_amount()` - Extracts the total amount of the invoice.
 - `get_dt()` - Extracts the date and time of the invoice and converts it to UTC as a datetime object.
 - `get_invoice_number()` - Extracts the invoice number.
@@ -43,6 +44,7 @@ parser.data()
 
 parser.get_company_name()
 parser.get_company_tin()
+parser.get_buyer_tin()
 parser.get_total_amount()
 parser.get_dt()
 parser.get_invoice_number()
@@ -57,6 +59,7 @@ parser.get_items()
 {
     "company_name": "Company Name",
     "company_tin": "123456789",
+    "buyer_tin": "987654321",
     "invoice_number": "QWERTYU1-QWERTYU1-12345",
     "invoice_datetime": datetime.datetime(2021, 1, 1, 0, 0, tzinfo=datetime.timezone.utc),
     "invoice_total_amount": 123.45,

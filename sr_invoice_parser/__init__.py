@@ -4,7 +4,7 @@ __title__ = "sr_invoice_parser"
 __author__ = "Innovigo"
 __website__ = "https://wwwinnovigo.co/"
 __email__ = "hello@innovigo.co"
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 
 VERSION = __version__
 

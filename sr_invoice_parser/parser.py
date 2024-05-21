@@ -74,6 +74,17 @@ class InvoiceParser:
         value = self.html_selector.css("span#tinLabel::text").get().strip()
         return value
 
+    @handle_exception()
+    def get_buyer_tin(self) -> str:
+        """Get the buyer tin/tax identification number"""
+
+        value = self.html_selector.css("span#buyerIdLabel::text").get().strip()
+        if value:
+            value = value.split(":")
+            if len(value) == 2:
+                return value[1]
+        return value
+
     def string_to_float(self, string: str) -> float:
         return float(string.replace(".", "").replace(",", "."))
 
@@ -196,6 +207,7 @@ class InvoiceParser:
 
         company_name = self.get_company_name()
         company_tin = self.get_company_tin()
+        buyer_tin = self.get_buyer_tin()
         total_amount = self.get_total_amount()
         invoice_number = self.get_invoice_number()
         invoice_text = self.get_invoice_text()
@@ -204,6 +216,7 @@ class InvoiceParser:
         return {
             "company_name": company_name,
             "company_tin": company_tin,
+            "buyer_tin": buyer_tin,
             "invoice_number": invoice_number,
             "invoice_datetime": dt,
             "invoice_total_amount": total_amount,
